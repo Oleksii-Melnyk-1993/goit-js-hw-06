@@ -3,6 +3,6 @@ const refs = {
   nameLabel: document.querySelector(`#name-output`),
 };
 refs.input.addEventListener(`input`, () => {
-  const name = refs.input.value.trim();
-  refs.nameLabel.textContent = name ? name : `Anonymous`;
+  const nameInput = refs.input.value.trim();
+  refs.nameLabel.textContent = nameInput ? nameInput : `Anonymous`;
 });
