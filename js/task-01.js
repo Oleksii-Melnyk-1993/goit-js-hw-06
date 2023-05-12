@@ -6,8 +6,9 @@ const categoriesCount = categoriesItems.length;
 console.log(`Number of categories:${categoriesCount}`);
 
 categoriesItems.forEach((item) => {
-  const categoryTitle = item.querySelector(`h2`).textContent;
-  const categoryItems = item.querySelectorAll(`li`);
+  const categoryTitle = item.firstElementChild.textContent;
+  const categoryUl = item.lastElementChild;
+  const categoryItems = categoryUl.children;
   const categoryCount = categoryItems.length;
   console.log(`Category: ${categoryTitle}`);
   console.log(`Elements: ${categoryCount} `);

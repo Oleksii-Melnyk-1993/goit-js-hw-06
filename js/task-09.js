@@ -3,7 +3,7 @@ const colorShows = document.querySelector(`.color`);
 const changeColor = document.querySelector(`.change-color`);
 changeColor.addEventListener("click", () => {
   colorShows.textContent = getRandomHexColor();
-  bodyEl.style.backgroundColor = getRandomHexColor();
+  bodyEl.style.backgroundColor = colorShows.textContent;
 });
 
 function getRandomHexColor() {
