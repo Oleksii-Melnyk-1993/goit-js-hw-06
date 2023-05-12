@@ -9,7 +9,8 @@ categoriesItems.forEach((item) => {
   const categoryTitle = item.firstElementChild.textContent;
   const categoryUl = item.lastElementChild;
   const categoryItems = categoryUl.children;
-  const categoryCount = categoryItems.length;
+  // const categoryCount = categoryItems.length;
+  // console.log(categoryItems);
   console.log(`Category: ${categoryTitle}`);
-  console.log(`Elements: ${categoryCount} `);
+  console.log(`Elements: ${categoryItems.length} `);
 });
